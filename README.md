@@ -9,15 +9,20 @@ The objective is to identify groups of customers with similar behavioral pattern
 ## Dataset
 
 - **Number of records:** 8,950 customer records
+- **Number of features:** 18
 - **Domain:** Credit card customer behavior
-- **Data characteristics:** Customer balance, purchase behavior, cash advance behavior, and other available numerical features.
+- **Data characteristics:** Customer balance, purchase behavior, cash advance behavior, and other numerical features.
+- **Dataset source:** Provided by the course teaching assistant for academic purposes.
+- **Availability:** The dataset is not included in this repository. Its original source and redistribution license have not been independently verified.
+
+To run the notebook, place the dataset file `DATASET_UTP_PPDM.csv` in the same directory as the notebook.
 
 ## Tools and Technologies
-
-- Python
-- Google Colab
-- K-Means Clustering
-- Data Analysis and Visualization
+- **Programming Language:** Python
+- **Development Environment:** Google Colab
+- **Data Processing:** Pandas, NumPy
+- **Data Visualization:** Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn (K-Means, StandardScaler, LabelEncoder, Silhouette Score)
 
 ## Project Workflow
 
@@ -30,7 +35,7 @@ The project was conducted through the following stages:
    Handled missing values and outliers, selected relevant features, and standardized the data before clustering.
 
 3. **Determining the Number of Clusters**  
-   Applied the Elbow Method to determine an appropriate number of clusters.
+   Applied the Elbow Method and Silhouette Score to evaluate the appropriate number of clusters.
 
 4. **K-Means Clustering**  
    Applied the K-Means algorithm to group customers into three clusters based on their characteristics.
